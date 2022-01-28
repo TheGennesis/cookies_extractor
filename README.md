@@ -1,5 +1,5 @@
 # cookies_extractor
-This script is a cookies extractor, available only for Windows machines.
+This script, written in Python, is a cookies extractor, available only for Windows machines.
 
 ## Browsers supported
 As by now, the script works for the following browsers:
