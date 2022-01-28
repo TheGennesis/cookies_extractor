@@ -10,10 +10,10 @@ As by now, the script works for the following browsers:
 
 ## To do next
 In the upcoming future, I would like to add:
-[ ] Encryption and decryption process for the extracted cookies
-[ ] Brave browser support
-[ ] Mac OS support, with Safari browser too
-[ ] Linux support
+- [ ] Encryption and decryption process for the extracted cookies
+- [ ] Brave browser support
+- [ ] Mac OS support, with Safari browser too
+- [ ] Linux support
 
 ## How to use
 In order to extract cookies from your browser, you have to:
