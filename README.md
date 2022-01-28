@@ -17,7 +17,7 @@ In the upcoming future, I would like to add:
 
 ## How to use
 In order to extract cookies from your browser, you have to:
-* Instantiate an object of class CookiesExtractor
+* Instantiate an object of class `CookiesExtractor`
 * Call the `load()` method of the class
 
 At this point you are able to manipulate your cookies. You can use the following methods:
