@@ -24,3 +24,4 @@ At this point you are able to manipulate your cookies. You can use the following
 * `cookies_to_file()`
 * `cookies_to_json()`
 * `cookies_to_server()`
+* `cookies_to_cookiejar()`
